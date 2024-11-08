@@ -15,7 +15,10 @@ GET /prices?kind=sc2-micro
 
 This project scaffold provides an end-to-end implementation of an API endpoint which returns some dummy data. You should try to follow the same code structure.
 
-You should implement `SmartcloudPriceService` to call the [smartcloud](https://hub.docker.com/r/smartpayco/smartcloud) endpoint and return the price data. Note that the smartcloud service has usage quota and may return error occassionally to simulate unexpected errors. Please make sure your service is able to handle the constraint and errors gracefully.
+You should implement `SmartcloudPriceService` to call the [smartcloud](https://hub.docker.com/r/smartpayco/smartcloud) endpoint and return the price data.
+Note that the smartcloud service has usage quota and may return error occassionally to simulate unexpected errors. 
+Please make sure your solution respects the service quota while still serving client’s requests for prices without 
+interruption as long as possible
 
 You should also include a README file to document:-
 1. Any assumptions you make
